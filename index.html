@@ -50,6 +50,32 @@ html[data-theme="light"] .bar{background:#e2e6ef}
 html[data-theme="light"] .bar i{background:#263bc0}
 html[data-theme="light"] .empty{color:#3b4a64}
 html[data-theme="light"] .avatar{background:#e4e9ff;color:#243cbd}
+
+/* Layout compacto, priorizando leitura rápida na rua */
+#page-home .overview{margin:1px 0 8px}
+.top{padding:14px 0 12px}
+.eyebrow{font-size:8px;letter-spacing:1.4px}
+.top h1{font-size:23px}
+#page-home .hero{padding:5px 0 0}
+#page-home .money{font-size:clamp(45px,11vw,61px);margin:1px 0 10px;line-height:1.15}
+#page-home .hero-foot{padding-top:11px;gap:12px}
+#page-home .hero-stat{font-size:22px;line-height:1.15;font-weight:850;white-space:nowrap}
+#page-home .hero-stat small{font-size:11px;margin-top:5px;line-height:1.25;font-weight:650}
+#page-home .actions{margin:14px 0 14px}
+#page-home .actions .pill{padding:11px 9px}
+#page-home .entry-head{display:none}
+#page-home .mic{width:126px;height:126px;margin:12px auto 11px}
+#page-home .mic::before{font-size:42px}
+#page-home .mic-caption{margin:0}
+#page-home .inputline{margin-top:13px}
+#page-home .inputline input{padding:13px 14px}
+#page-home .hint:empty{display:none}
+#page-home .sectiontitle.latest{margin:19px 0 5px}
+#page-home .record{padding:9px 0}
+#page-home .logo{width:38px;height:38px}
+html[data-theme="light"] #page-home .hero-stat{color:#0b152b}
+html[data-theme="light"] #page-home .hero-stat small{color:#34415d}
+@media(max-width:370px){#page-home .hero-stat{font-size:19px}#page-home .hero-stat small{font-size:10px}#page-home .mic{width:116px;height:116px}}
 </style></head><body><main class="wrap"><header class="top"><div><div class="eyebrow">REGISTRO INTELIGENTE</div><h1>rota</h1></div><button class="theme-toggle" id="themeToggle" aria-label="Ativar modo claro" title="Alternar tema">☀ Claro</button></header>
 <section id="page-home"><div class="overview"><div class="dayline">HOJE</div><div class="tag off" id="statusTag"><span class="dot"></span><span>Sem jornada ativa</span></div></div><div class="hero"><div class="small" id="heroLabel">Total de hoje</div><div class="money" id="total">R$ 0,00</div><div class="hero-foot"><div><div class="hero-stat" id="count">0<small>Entregas</small></div></div><div><div class="hero-stat" id="hours">0h 00<small>Tempo de jornada</small></div></div><div><div class="hero-stat" id="km">—<small>Quilômetros</small></div></div></div></div>
 <div class="actions"><button class="pill primary" id="startBtn">▶ Iniciar jornada</button><button class="pill hidden" id="pauseBtn">Ⅱ Pausar</button><button class="pill danger hidden" id="finishBtn">■ Encerrar</button></div>
