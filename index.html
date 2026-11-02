@@ -157,11 +157,76 @@ html[data-theme="light"] #page-home .mic.listening{background:radial-gradient(ci
 @keyframes micBreathe{0%,100%{transform:scale(1)}50%{transform:scale(1.14)}}
 @keyframes micRipple{0%{transform:scale(1);opacity:.45}85%,100%{transform:scale(1.16);opacity:0}}
 @media(prefers-reduced-motion:reduce){#page-home .mic.listening .mic-icon,#page-home .mic.listening::after{animation:none}}
+</style><style>
+/* Dashboard C: identity kept, layout rebuilt, no changes to other pages */
+#page-home .c-dashboard{display:flex;flex-direction:column;gap:0}
+#page-home .c-circle-area{position:relative;display:flex;justify-content:center;align-items:center;padding:8px 0 11px;min-height:258px;isolation:isolate}
+#page-home .c-halo{position:absolute;width:min(100%,460px);height:115px;top:49%;z-index:-1;background:radial-gradient(ellipse,#6951ef37 0%,#6951ef0a 52%,transparent 75%);filter:blur(15px)}
+#page-home .c-total-ring{width:244px;height:244px;max-width:73vw;max-height:73vw;border-radius:50%;padding:10px;background:conic-gradient(from 220deg,#995bfa 0deg,#766cff 240deg,#272447 242deg,#272447 289deg,transparent 290deg,transparent 360deg);box-shadow:0 0 35px #7253e619}
+#page-home .c-ring-core{height:100%;width:100%;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:12px;background:#0d1020}
+#page-home .c-ring-label{font-size:14px;font-weight:650;color:#d6d5ef}
+#page-home .c-ring-core #total{font-size:clamp(34px,9vw,45px);font-weight:850;letter-spacing:-1.5px;color:#fff;white-space:nowrap}
+#page-home .c-ring-core .tag{display:inline-flex;max-width:90%;border:1px solid #2c534c;background:#0e2826;color:#79edbb;padding:6px 9px;font-size:10px;border-radius:40px;gap:6px}
+#page-home .c-ring-core .tag.off{background:#202132;border-color:#35374c;color:#c5c6d9}
+#page-home .c-metrics{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));padding:9px 0 16px;gap:2px}
+#page-home .c-metrics .hero-stat{text-align:center;font-size:18px;line-height:1.2;border-right:1px solid #2b2c40;min-width:0;white-space:nowrap}
+#page-home .c-metrics .hero-stat:last-child{border:0}
+#page-home .c-metrics .hero-stat small{display:block;margin-top:5px;font-size:10px;font-weight:500;color:#a6a9c1}
+#page-home .c-register{margin:14px 0 9px}
+#page-home .c-register-row{position:relative;display:flex;align-items:center;gap:12px;padding:9px 13px;border:1px solid #4a348c;border-radius:23px;background:linear-gradient(105deg,#251346,#151b30);min-height:68px}
+#page-home .c-register .mic{position:relative;flex:none;width:51px;height:51px;min-width:51px;min-height:51px;border-radius:50%;margin:0;padding:0;display:grid;place-items:center;background:linear-gradient(145deg,#a55bff,#5935d8);color:#fff;border:1px solid #aa79ff;box-shadow:0 0 15px #8954ea44}
+#page-home .c-register .mic .mic-icon{display:grid;width:27px;height:27px;place-items:center}
+#page-home .c-register .mic::before{content:none!important}
+#page-home .c-register .mic.listening{background:linear-gradient(145deg,#ff8baa,#e34a7e);color:#fff}
+#page-home .c-register-label{display:flex;flex:1;min-width:0;flex-direction:column;gap:4px}
+#page-home .c-register-label strong{font-size:13px;line-height:1.2;font-weight:750}
+#page-home .c-register-label span{font-size:9px;color:#b8b4d6;letter-spacing:.3px}
+#page-home .c-wave{color:#9460ff;font-size:16px;letter-spacing:2px;white-space:nowrap}
+#page-home .c-register .inputline{margin:10px 0 0}
+#page-home .c-register .hint{margin:5px 0}
+#page-home .sectiontitle.latest{margin:11px 0 11px}
+#page-home .platform-cards{gap:9px}
+#page-home .platform-card{padding:11px 3px 10px;border-radius:18px}
+#page-home .platform-card .logo{width:42px;height:42px}
+#page-home .platform-card .platform-name{font-size:11px}
+#page-home .platform-card .platform-value{font-size:clamp(12px,3.5vw,16px)}
+#page-home .platform-card .platform-count{font-size:10px}
+#page-home .c-actions{display:flex;gap:10px;margin:17px 0 12px}
+#page-home .c-actions #pauseBtn{display:none!important}
+#page-home .c-actions .pill{min-height:45px;border-radius:15px}
+#page-home .c-actions #finishBtn{background:#9d214a;border-color:#cb466c;color:#fff;font-weight:800}
+#page-home .c-actions #cancelBtn{background:#1a1c2c;border-color:#35384e;color:#c6c8dc}
+html[data-theme="light"] #page-home .c-ring-core{background:#fff}
+html[data-theme="light"] #page-home .c-ring-label{color:#3e4765}
+html[data-theme="light"] #page-home .c-ring-core #total{color:#121a35}
+html[data-theme="light"] #page-home .c-total-ring{background:conic-gradient(from 220deg,#7651df 0deg,#6a78ed 240deg,#e6e8f4 242deg,#e6e8f4 289deg,transparent 290deg,transparent 360deg);box-shadow:0 6px 20px #6c70cd23}
+html[data-theme="light"] #page-home .c-ring-core .tag{background:#e8faf0;border-color:#caead5;color:#21764b}
+html[data-theme="light"] #page-home .c-ring-core .tag.off{background:#edf0fa;border-color:#d4d9ed;color:#53617e}
+html[data-theme="light"] #page-home .c-metrics .hero-stat{border-color:#e0e4f1;color:#18223d}
+html[data-theme="light"] #page-home .c-metrics .hero-stat small{color:#6c778f}
+html[data-theme="light"] #page-home .c-register-row{background:#f2f0ff;border-color:#c6b7f6;color:#1d2450}
+html[data-theme="light"] #page-home .c-register-label span{color:#66698b}
+html[data-theme="light"] #page-home .c-actions #cancelBtn{background:#f0f1f8;border-color:#d2d6e5;color:#52607b}
+@media(max-width:370px){#page-home .c-circle-area{min-height:232px}#page-home .c-total-ring{width:216px;height:216px}#page-home .c-wave{display:none}#page-home .c-register-label strong{font-size:12px}}
 </style></head><body><main class="wrap"><header class="top"><div><div class="eyebrow">REGISTRO INTELIGENTE</div><h1>rota</h1></div><div class="top-actions"><button class="theme-toggle" id="themeToggle" aria-label="Ativar modo claro" title="Alternar tema">☀ Claro</button><button type="button" id="privacyToggle" class="privacy-toggle" aria-label="Ocultar valores" title="Ocultar ou mostrar valores">◉</button></div></header>
-<section id="page-home"><div class="overview"><div class="dayline">HOJE</div><div class="tag off" id="statusTag"><span class="dot"></span><span>Sem jornada ativa</span></div></div><div class="hero"><div class="money-heading"><div class="small" id="heroLabel">Total de hoje</div></div><div class="money" id="total">R$ 0,00</div><div class="hero-foot"><div><div class="hero-stat" id="count">0<small>Entregas</small></div></div><div><div class="hero-stat" id="hours">0h 00<small>Tempo de jornada</small></div></div><div><div class="hero-stat" id="km">—<small>Quilômetros</small></div></div></div></div>
-<div class="actions"><button class="pill primary" id="startBtn">▶ Iniciar jornada</button><button class="pill hidden" id="pauseBtn">Ⅱ Pausar</button><button class="pill danger hidden" id="finishBtn">■ Encerrar</button><button class="pill hidden" id="cancelBtn">Cancelar</button></div>
-<section class="card entry-card"><div class="entry-head"><div class="icon">✦</div><div><strong>Registrar</strong></div></div><button class="mic" id="micBtn" aria-label="Toque para falar"><span class="mic-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="9" y="3.5" width="6" height="10" rx="3" stroke="currentColor" stroke-width="1.9"/><path d="M7.5 10.5v1a4.5 4.5 0 0 0 9 0v-1M12 16v3M9.5 19h5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></span></button><div class="mic-caption" id="micCaption">TOQUE PARA FALAR</div><div class="inputline"><input aria-label="Lançamento de entrega" autocomplete="off" id="quickInput" placeholder="Ex.: Particular 20,00"/><button class="send" id="sendBtn">↗</button></div><p class="hint" id="micHint"></p></section>
-<div class="sectiontitle latest"><h2>ENTREGAS DE HOJE</h2><span class="muted hidden" id="entryPeriod">Hoje</span></div><div class="platform-cards" id="history"></div></section>
+<section id="page-home">
+<div class="c-dashboard">
+  <div class="c-circle-area">
+    <div class="c-halo"></div>
+    <div class="c-total-ring"><div class="c-ring-core"><span class="c-ring-label" id="heroLabel">Total de hoje</span><strong id="total">R$ 0,00</strong><div class="tag off" id="statusTag"><span class="dot"></span><span>Sem jornada ativa</span></div></div></div>
+  </div>
+  <div class="c-metrics">
+    <div id="count" class="hero-stat">0<small>Entregas</small></div>
+    <div id="hours" class="hero-stat">0h 00<small>Tempo</small></div>
+    <div id="km" class="hero-stat">—<small>Distância</small></div>
+  </div>
+  <section class="c-register">
+    <div class="c-register-row"><button class="mic" id="micBtn" aria-label="Toque para falar"><span class="mic-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="9" y="3.5" width="6" height="10" rx="3" stroke="currentColor" stroke-width="1.9"/><path d="M7.5 10.5v1a4.5 4.5 0 0 0 9 0v-1M12 16v3M9.5 19h5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></span></button><div class="c-register-label"><strong>Registrar entrega por voz</strong><span id="micCaption">TOQUE PARA FALAR</span></div><span class="c-wave" aria-hidden="true">▂▅▇▄▆▃</span></div>
+    <div class="inputline"><input aria-label="Lançamento de entrega" autocomplete="off" id="quickInput" placeholder="Ex.: iFood 7,99"/><button class="send" id="sendBtn">↗</button></div><p class="hint" id="micHint"></p>
+  </section>
+  <div class="sectiontitle latest"><h2>ENTREGAS DE HOJE</h2><span class="muted hidden" id="entryPeriod">Hoje</span></div><div class="platform-cards" id="history"></div>
+  <div class="actions c-actions"><button class="pill primary" id="startBtn">▶ Iniciar jornada</button><button class="pill hidden" id="pauseBtn">Ⅱ Pausar</button><button class="pill danger hidden" id="finishBtn">■ Encerrar jornada</button><button class="pill hidden" id="cancelBtn">Cancelar</button></div>
+</div></section>
 <section class="hidden" id="page-gains"><div class="gains-header"><h2>Ganhos</h2><div class="gains-tabs"><button class="gains-tab" data-gainstab="day">Dia</button><button class="gains-tab selected" data-gainstab="week">Semana</button><button class="gains-tab" data-gainstab="month">Mês</button></div><div class="gains-period"><button id="gainPrev">‹</button><span id="gainPeriod"></span><button id="gainNext">›</button></div></div><div class="gains-panel"><div class="gains-amount"><span>Total do período</span><strong id="gainTotal">R$ 0,00</strong></div><div class="gains-bars" id="gainBars"></div><div class="gains-selected" id="gainSelected" aria-live="polite"></div></div><div class="gains-info"><h3>Resumo do período</h3><div><span>Entregas</span><strong id="gainDeliveries">0</strong></div><div><span>Tempo em jornada</span><strong id="gainHours">0h</strong></div><div><span>Quilômetros</span><strong id="gainKm">—</strong></div></div></section><section class="hidden" id="page-journeys"><div class="hist-top"><div><div class="hist-eyebrow">SEU DESEMPENHO</div><h2>Histórico</h2></div><select id="historyMonth" aria-label="Selecionar mês"></select></div><div class="hist-filters"><button class="hist-filter selected" data-range="month">Mês</button><button class="hist-filter" data-range="week">Semana</button></div><div id="historyWeeks" class="hist-weeks hidden"></div><div class="hist-total"><span id="historyPeriodLabel">Faturamento do período</span><strong id="historyTotal">R$ 0,00</strong><div class="hist-stats"><span id="historyDeliveries"></span><span id="historyTime"></span><span id="historyKm"></span></div></div><div class="hist-detail"><span id="historyRates"></span><span id="historyBreakdown"></span></div><h3 class="hist-days-title">Dias trabalhados</h3><div id="historyDays" class="hist-days"></div><div id="journeyList" class="hidden"></div><div class="sectiontitle"><h2>Desempenho</h2><span class="muted" id="metricScope">Jornada</span></div><div class="metric-grid"><div class="card metric"><div class="label">Por hora</div><div class="value" id="perHour">R$ 0,00</div><div class="sub">Faturamento / tempo</div></div><div class="card metric"><div class="label">Por km</div><div class="value" id="perKm">—</div><div class="sub">Após informar km final</div></div><div class="card metric"><div class="label">iFood</div><div class="value" id="ifood">R$ 0,00</div><div class="sub" id="ifoodCount">0 entregas</div></div><div class="card metric"><div class="label">Uber</div><div class="value" id="uber">R$ 0,00</div><div class="sub" id="uberCount">0 entregas</div></div><div class="card metric"><div class="label">Particular</div><div class="value" id="particular">R$ 0,00</div><div class="sub" id="particularCount">0 entregas</div></div></div></section>
 <section class="hidden" id="page-settings"><div class="sectiontitle"><h2>Dados e backup</h2></div><div class="card settings-card"><h3>Backup dos registros</h3><p>Exporte jornadas e entregas em JSON. Guarde uma cópia fora do navegador, por exemplo no armazenamento do celular ou na nuvem.</p><button class="pill primary" id="exportBtn">↓ Exportar JSON</button><button class="pill" id="importBtn">↑ Restaurar JSON</button><input accept="application/json,.json" class="hidden" id="importFile" type="file"/><p class="tiny" id="backupDate"></p></div><div class="card settings-card"><h3>Exportação de entregas</h3><p>Arquivo CSV com as entregas para análise em planilhas.</p><button class="pill" id="csvBtn">↓ Exportar CSV</button></div><div class="card settings-card"><h3>Privacidade e armazenamento</h3><p>Nenhum lançamento é enviado para o ChatGPT ou para um servidor. O reconhecimento de voz pode utilizar serviços do navegador e exigir conexão com a internet. Limpar os dados do site pode apagar seu histórico.</p><button class="pill danger" id="deleteAll">Apagar todos os dados</button></div><div class="safe">Minha Rota • protótipo local v1.0</div><div class="safe">Os dados são salvos apenas neste navegador. Faça backups frequentes para evitar perdas.</div></section></main>
 <nav class="bottom"><div class="bottom-inner"><button class="nav active" data-page="home"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="m3 10 9-7 9 7v10H3z"></path><path d="M9 20v-7h6v7"></path></svg>Início</button><button class="nav" data-page="gains"><svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 20V10M10 20V4M16 20v-8M22 20V7"/></svg>Ganhos</button><button class="nav" data-page="journeys"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M12 7v5l4 2"></path></svg>Jornadas</button><button class="nav" data-page="settings"><svg fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"></path></svg>Backup</button></div></nav>
