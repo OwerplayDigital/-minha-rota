@@ -208,7 +208,7 @@ html[data-theme="light"] #page-home .c-register-row{background:#f2f0ff;border-co
 html[data-theme="light"] #page-home .c-register-label span{color:#66698b}
 html[data-theme="light"] #page-home .c-actions #cancelBtn{background:#f0f1f8;border-color:#d2d6e5;color:#52607b}
 @media(max-width:370px){#page-home .c-circle-area{min-height:232px}#page-home .c-total-ring{width:216px;height:216px}#page-home .c-wave{display:none}#page-home .c-register-label strong{font-size:12px}}
-</style></head><body><main class="wrap"><header class="top"><div><div class="eyebrow">REGISTRO INTELIGENTE</div><h1>rota</h1></div><div class="top-actions"><button class="theme-toggle" id="themeToggle" aria-label="Ativar modo claro" title="Alternar tema">☀ Claro</button><button type="button" id="privacyToggle" class="privacy-toggle" aria-label="Ocultar valores" title="Ocultar ou mostrar valores">◉</button></div></header>
+#page-home .c-register .inputline{display:none!important}#page-home .c-register .c-register-row{justify-content:space-between}#page-home .c-register .mic{order:3}#page-home .c-register-label{order:1}#page-home .c-wave{order:2;margin-left:auto}#page-home .c-register .hint:empty{display:none}</style></head><body><main class="wrap"><header class="top"><div><div class="eyebrow">REGISTRO INTELIGENTE</div><h1>rota</h1></div><div class="top-actions"><button class="theme-toggle" id="themeToggle" aria-label="Ativar modo claro" title="Alternar tema">☀ Claro</button><button type="button" id="privacyToggle" class="privacy-toggle" aria-label="Ocultar valores" title="Ocultar ou mostrar valores">◉</button></div></header>
 <section id="page-home">
 <div class="c-dashboard">
   <div class="c-circle-area">
@@ -221,7 +221,7 @@ html[data-theme="light"] #page-home .c-actions #cancelBtn{background:#f0f1f8;bor
     <div id="km" class="hero-stat">—<small>Distância</small></div>
   </div>
   <section class="c-register">
-    <div class="c-register-row"><button class="mic" id="micBtn" aria-label="Toque para falar"><span class="mic-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="9" y="3.5" width="6" height="10" rx="3" stroke="currentColor" stroke-width="1.9"/><path d="M7.5 10.5v1a4.5 4.5 0 0 0 9 0v-1M12 16v3M9.5 19h5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></span></button><div class="c-register-label"><strong>Registrar entrega por voz</strong><span id="micCaption">TOQUE PARA FALAR</span></div><span class="c-wave" aria-hidden="true">▂▅▇▄▆▃</span></div>
+    <div class="c-register-row"><div class="c-register-label"><strong>Registrar entrega por voz</strong><span id="micCaption">TOQUE PARA FALAR</span><button class="mic" id="micBtn" aria-label="Toque para falar"><span class="mic-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none"><rect x="9" y="3.5" width="6" height="10" rx="3" stroke="currentColor" stroke-width="1.9"/><path d="M7.5 10.5v1a4.5 4.5 0 0 0 9 0v-1M12 16v3M9.5 19h5" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/></svg></span></button></div><span class="c-wave" aria-hidden="true">▂▅▇▄▆▃</span></div>
     <div class="inputline"><input aria-label="Lançamento de entrega" autocomplete="off" id="quickInput" placeholder="Ex.: iFood 7,99"/><button class="send" id="sendBtn">↗</button></div><p class="hint" id="micHint"></p>
   </section>
   <div class="sectiontitle latest"><h2>ENTREGAS DE HOJE</h2><span class="muted hidden" id="entryPeriod">Hoje</span></div><div class="platform-cards" id="history"></div>
